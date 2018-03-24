@@ -1,3 +1,3 @@
 module.exports = {
-  sessionSecret: "my secret"
+  sessionSecret: process.env.SESSION_SECRET
 };
