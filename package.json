@@ -5,6 +5,10 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
+  "engines": {
+    "npm": "5.7.1",
+    "node": "8.9.4"
+  },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "latest",
