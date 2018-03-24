@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const io = require("socket.io")();
 const session = require("express-session");
+const { sessionSecret } = require("./config");
 const MongoStore = require("connect-mongo")(session);
 
 const app = express();
@@ -16,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 //configuring express session
 app.use(
   session({
-    secret: "my secret",
+    secret: sessionSecret,
     resave: true,
     saveUninitialized: false,
     store: new MongoStore({ mongooseConnection: mongoose.connection })

@@ -1,2 +1,2 @@
 # Chatio
-A nodejs chat application built on top of the express framework with socket.io for real time messaging mognodb for database connection and express-session for session management that connects all users to one platform.
+A nodejs chat application built on top of the express framework with socket.io for real time messaging, mongodb for database connection and express-session for session management. This application connects all users to one platform.
