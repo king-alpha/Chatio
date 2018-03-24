@@ -1,0 +1,35 @@
+
+body,
+.fixed-bottom {
+    width: 90%;
+    max-width: 500px;
+}
+
+
+body {
+    margin: 100px auto;
+}
+
+#root-messages {
+    margin-bottom: 200px;
+}
+
+.fixed-bottom {
+    margin: 100px auto 0;
+}
+
+.alert.alert-warning,
+.alert-danger {
+    text-align: center;
+}
+
+.alert-success {
+    text-align: right;
+}
+
+.display-1,
+.display-4 {
+    text-align: center;
+    /*margin: 50px 0;*/
+    color: #34ce57;
+}

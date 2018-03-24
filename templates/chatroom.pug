@@ -1,0 +1,20 @@
+extends ./layout
+
+block main
+  .main-content
+    #root-messages
+      if error_message
+        .alert.alert-warning(role='alert') #{error_message}
+      else
+        each message in messages
+          if message.sender.id.toString() === senderId.toString()
+            .alert.alert-success(role='alert') #{message.text}
+          else
+            .alert.alert-primary(role='alert') #{message.text}
+      .chat-form
+      form.send-chat-form(name='chatroomForm')
+        .form-group.fixed-bottom
+          input#inlineFormInput.form-control.my-2(type='text', placeholder='type here' name='text')
+          button.btn.btn-primary.my-2.btn-block.btn-lg(type='submit') send
+
+  include ./includes/scripts
