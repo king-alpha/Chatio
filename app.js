@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const io = require("socket.io")();
-const bodyParser = require("body-parser");
 const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
 
@@ -11,8 +10,8 @@ const app = express();
 app.set("view engine", "pug");
 app.set("views", "templates");
 app.use("/static", express.static("./public"));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 //configuring express session
 app.use(
