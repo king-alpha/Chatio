@@ -8,6 +8,13 @@ body,
 
 body {
     margin: 100px auto;
+    background-color: #e2e2e2;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
 }
 
 #root-messages {
@@ -31,5 +38,9 @@ body {
 .display-4 {
     text-align: center;
     /*margin: 50px 0;*/
-    color: #34ce57;
+    /* color: #34ce57; */
+}
+
+.join-btn {
+    margin: 0 50%;
 }
